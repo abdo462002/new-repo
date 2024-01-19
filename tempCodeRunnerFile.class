@@ -1,0 +1,13 @@
+public class Main {
+   public Main() {
+   }
+
+   public static void main(String[] var0) {
+      GovernmentRegistry var1 = GovernmentRegistry.getInstance();
+      CitizenInfo var2 = new CitizenInfo("123456", "EL BOUKHARI Youcef", "INPT-Rabat");
+      var1.updateCitizenInfo("123456", var2);
+      CitizenInfo var3 = var1.getCitizenInfo("123456");
+      System.out.println("Citizen Name: " + var3.getName());
+      System.out.println("Citizen Address: " + var3.getAddress());
+   }
+}
